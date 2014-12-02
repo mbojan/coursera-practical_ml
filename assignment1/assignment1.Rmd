@@ -1,0 +1,32 @@
+# First assignment
+
+```{r setup}
+library(RCurl)
+```
+
+Downloading data and saving locally
+
+```{r download_save, include=FALSE}
+# train data
+train <- read.csv(textConnection(getURL("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv")), as.is=TRUE, row.names=1)
+# test data
+test <- read.csv(textConnection(getURL("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv")), as.is=TRUE, row.names=1)
+# Save local copies
+save(test, train, file="ass1.rda")
+```
+
+
+```{r load_data}
+# Loading locally saved data
+load("ass1.rda")
+table(train$classe)
+names(train)
+```
+
+
+
+
+
+
+
+
