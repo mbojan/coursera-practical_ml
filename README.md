@@ -1,4 +1,3 @@
-coursera-practical_ml
-=====================
+# Coursera: Practical Machine Learning course
 
-Coursera: Practical Machine Learning course
+Notes and assignments.
